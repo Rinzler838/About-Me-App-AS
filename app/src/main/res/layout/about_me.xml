@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".AboutMe"
+    android:id="@+id/aboutMe"
+    android:background="#0078ff">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/intro"
+        android:id="@+id/introButton"
+        android:clickable="true"
+        android:background="#010101"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/booksButton"
+        android:layout_alignEnd="@+id/booksButton" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/cuisine"
+        android:id="@+id/cuisineButton"
+        android:clickable="true"
+        android:background="#010101"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:enabled="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/edu"
+        android:id="@+id/eduButton"
+        android:clickable="true"
+        android:background="#010101"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/introText"
+        android:layout_alignEnd="@+id/introText" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/books"
+        android:id="@+id/booksButton"
+        android:clickable="true"
+        android:background="#010101"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/digitalButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/digital"
+        android:id="@+id/digitalButton"
+        android:clickable="true"
+        android:background="#010101"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/eduButton"
+        android:layout_alignRight="@+id/introText"
+        android:layout_alignEnd="@+id/introText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/introText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/booksButton"
+        android:text="@string/introText"
+        android:visibility="invisible"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cuisineText"
+        android:id="@+id/cuisineText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/introText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eduText"
+        android:id="@+id/eduText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/introText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/booksText"
+        android:id="@+id/booksText"
+        android:layout_alignLeft="@+id/eduText"
+        android:layout_alignStart="@+id/eduText"
+        android:layout_alignTop="@+id/introText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digitalText"
+        android:id="@+id/digitalText"
+        android:layout_alignLeft="@+id/booksText"
+        android:layout_alignStart="@+id/booksText"
+        android:layout_alignTop="@+id/introText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/click"
+        android:id="@+id/hintText"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/introText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+</RelativeLayout>
