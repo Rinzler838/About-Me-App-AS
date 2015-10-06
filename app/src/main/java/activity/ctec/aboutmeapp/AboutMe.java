@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.ImageView;
 
 public class AboutMe extends AppCompatActivity
 {
@@ -24,25 +25,40 @@ public class AboutMe extends AppCompatActivity
     private TextView digitalText;
     private TextView hintText;
 
+    private ImageView introImage;
+    //private ImageView cuisineImage;
+    private ImageView eduImage;
+    private ImageView booksImage;
+    //private ImageView digitalImage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about_me);
 
+        //Buttons
         introButton = (Button) findViewById(R.id.introButton);
         cuisineButton = (Button) findViewById(R.id.cuisineButton);
         eduButton = (Button) findViewById(R.id.eduButton);
         booksButton = (Button) findViewById(R.id.booksButton);
         digitalButton = (Button) findViewById(R.id.digitalButton);
 
-
+        //Text Boxes
         introText = (TextView) findViewById(R.id.introText);
         cuisineText = (TextView) findViewById(R.id.cuisineText);
         eduText = (TextView) findViewById(R.id.eduText);
         booksText = (TextView) findViewById(R.id.booksText);
         digitalText = (TextView) findViewById(R.id.digitalText);
         hintText = (TextView) findViewById(R.id.hintText);
+
+        //Images
+        introImage = (ImageView) findViewById(R.id.introImage);
+        //cuisineImage = (ImageView) findViewById(R.id.cuisineImage);
+        eduImage = (ImageView) findViewById(R.id.eduImage);
+        booksImage = (ImageView) findViewById(R.id.booksImage);
+        //digitalImage = (ImageView) findViewById(R.id.digitalImage);
+
         setupListeners();
     }
 
@@ -73,15 +89,20 @@ public class AboutMe extends AppCompatActivity
 
     private void changeIntro()
     {
-        if(introText.getVisibility() == View.INVISIBLE)
+        if (introText.getVisibility() == View.INVISIBLE)
         {
             introText.setVisibility(View.VISIBLE);
             hintText.setVisibility(View.INVISIBLE);
+            introImage.setVisibility(View.VISIBLE);
         }
         else
         {
-            introText.setVisibility(View.INVISIBLE);
-            hintText.setVisibility(View.VISIBLE);
+            if (introText.getVisibility() == View.VISIBLE)
+            {
+                introText.setVisibility(View.INVISIBLE);
+                hintText.setVisibility(View.VISIBLE);
+                introImage.setVisibility(View.INVISIBLE);
+            }
         }
     }
 
@@ -91,11 +112,17 @@ public class AboutMe extends AppCompatActivity
         {
             cuisineText.setVisibility(View.VISIBLE);
             hintText.setVisibility(View.INVISIBLE);
+            //cuisineImage.setVisibility(View.VISIBLE);
         }
         else
         {
-            introText.setVisibility(View.INVISIBLE);
-            hintText.setVisibility(View.VISIBLE);
+            if (cuisineText.getVisibility() == View.VISIBLE)
+            {
+                cuisineText.setVisibility(View.INVISIBLE);
+                hintText.setVisibility(View.VISIBLE);
+                //cuisineImage.setVisibility(View.INVISIBLE);
+            }
+
         }
     }
 
@@ -105,11 +132,17 @@ public class AboutMe extends AppCompatActivity
         {
             eduText.setVisibility(View.VISIBLE);
             hintText.setVisibility(View.INVISIBLE);
+            eduImage.setVisibility(View.VISIBLE);
         }
         else
         {
-            introText.setVisibility(View.INVISIBLE);
-            hintText.setVisibility(View.VISIBLE);
+            if (eduText.getVisibility() == View.VISIBLE)
+            {
+                eduText.setVisibility(View.INVISIBLE);
+                hintText.setVisibility(View.VISIBLE);
+                eduImage.setVisibility(View.INVISIBLE);
+            }
+
         }
     }
 
@@ -119,11 +152,17 @@ public class AboutMe extends AppCompatActivity
         {
             booksText.setVisibility(View.VISIBLE);
             hintText.setVisibility(View.INVISIBLE);
+            booksImage.setVisibility(View.VISIBLE);
         }
         else
         {
-            introText.setVisibility(View.INVISIBLE);
-            hintText.setVisibility(View.VISIBLE);
+            if (booksText.getVisibility() == View.VISIBLE)
+            {
+                booksText.setVisibility(View.INVISIBLE);
+                hintText.setVisibility(View.VISIBLE);
+                booksImage.setVisibility(View.INVISIBLE);
+            }
+
         }
     }
 
@@ -133,11 +172,17 @@ public class AboutMe extends AppCompatActivity
         {
             digitalText.setVisibility(View.VISIBLE);
             hintText.setVisibility(View.INVISIBLE);
+            //digitalImage.setVisibility(View.VISIBLE);
         }
         else
         {
-            introText.setVisibility(View.INVISIBLE);
-            hintText.setVisibility(View.VISIBLE);
+            if (digitalText.getVisibility() == View.VISIBLE)
+            {
+                digitalText.setVisibility(View.INVISIBLE);
+                hintText.setVisibility(View.VISIBLE);
+                //digitalImage.setVisibility(View.INVISIBLE);
+            }
+
         }
     }
 

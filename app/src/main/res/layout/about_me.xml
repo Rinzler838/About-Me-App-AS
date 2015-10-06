@@ -5,26 +5,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".AboutMe"
     android:id="@+id/aboutMe"
-    android:background="#0078ff">
+    android:background="#0078ff"
+    android:visibility="visible">
 
     <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
         android:text="@string/intro"
         android:id="@+id/introButton"
         android:clickable="true"
         android:background="#010101"
         android:textColor="#ffffff"
-        android:textSize="14sp"
+        android:textSize="15sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/booksButton"
-        android:layout_alignEnd="@+id/booksButton" />
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
         android:text="@string/cuisine"
         android:id="@+id/cuisineButton"
         android:clickable="true"
@@ -36,8 +35,8 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
         android:text="@string/edu"
         android:id="@+id/eduButton"
         android:clickable="true"
@@ -45,35 +44,34 @@
         android:textColor="#ffffff"
         android:textSize="15sp"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/introText"
-        android:layout_alignEnd="@+id/introText" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="173dp"
+        android:layout_height="50dp"
         android:text="@string/books"
         android:id="@+id/booksButton"
         android:clickable="true"
         android:background="#010101"
         android:textColor="#ffffff"
         android:textSize="15sp"
-        android:layout_alignTop="@+id/digitalButton"
+        android:layout_below="@+id/buttonSpacer"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="173dp"
+        android:layout_height="50dp"
         android:text="@string/digital"
         android:id="@+id/digitalButton"
         android:clickable="true"
         android:background="#010101"
         android:textColor="#ffffff"
         android:textSize="15sp"
-        android:layout_marginTop="32dp"
-        android:layout_below="@+id/eduButton"
-        android:layout_alignRight="@+id/introText"
-        android:layout_alignEnd="@+id/introText" />
+        android:layout_below="@+id/buttonSpacer"
+        android:layout_alignRight="@+id/eduButton"
+        android:layout_alignEnd="@+id/eduButton" />
 
     <TextView
         android:layout_width="match_parent"
@@ -84,7 +82,8 @@
         android:layout_below="@+id/booksButton"
         android:text="@string/introText"
         android:visibility="invisible"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:layout_alignParentEnd="false" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -111,8 +110,8 @@
         android:layout_alignTop="@+id/introText"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:visibility="invisible"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -133,14 +132,11 @@
         android:layout_height="wrap_content"
         android:text="@string/digitalText"
         android:id="@+id/digitalText"
-        android:layout_alignLeft="@+id/booksText"
-        android:layout_alignStart="@+id/booksText"
-        android:layout_alignTop="@+id/introText"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
         android:visibility="invisible"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:layout_below="@+id/booksButton"
+        android:layout_alignRight="@+id/digitalButton"
+        android:layout_alignEnd="@+id/digitalButton" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -149,8 +145,73 @@
         android:text="@string/click"
         android:id="@+id/hintText"
         android:textColor="#ffffff"
-        android:layout_alignTop="@+id/introText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/introButton"
+        android:layout_alignRight="@+id/eduButton"
+        android:layout_alignEnd="@+id/eduButton"
+        android:id="@+id/buttonSpacer" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/introImage"
+        android:src="@drawable/me1"
+        android:visibility="invisible"
+        android:layout_alignRight="@+id/eduButton"
+        android:layout_alignEnd="@+id/eduButton"
+        android:layout_below="@+id/hintText" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/eduImage"
+        android:src="@drawable/jordan5"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/hintText" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/booksImage"
+        android:src="@drawable/area7"
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/introImage"
+        android:layout_toEndOf="@+id/introImage"
+        android:layout_alignTop="@+id/hintText" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toEndOf="@+id/introButton"
+        android:layout_below="@+id/buttonSpacer"
+        android:layout_alignLeft="@+id/digitalButton"
+        android:layout_alignStart="@+id/digitalButton" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toEndOf="@+id/cuisineButton"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/cuisineButton"
+        android:id="@+id/space" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/introButton"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/cuisineButton"
+        android:layout_toStartOf="@+id/cuisineButton" />
+
 
 </RelativeLayout>
