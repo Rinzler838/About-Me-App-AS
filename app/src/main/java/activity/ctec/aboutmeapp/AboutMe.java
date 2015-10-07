@@ -38,22 +38,20 @@ public class AboutMe extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about_me);
 
-<<<<<<< HEAD
         //Button Identifiers
-=======
+
         //Buttons
->>>>>>> origin/master
+        origin/master
         introButton = (Button) findViewById(R.id.introButton);
         cuisineButton = (Button) findViewById(R.id.cuisineButton);
         eduButton = (Button) findViewById(R.id.eduButton);
         booksButton = (Button) findViewById(R.id.booksButton);
         digitalButton = (Button) findViewById(R.id.digitalButton);
 
-<<<<<<< HEAD
         //TextBox Identifiers
-=======
+
         //Text Boxes
->>>>>>> origin/master
+        origin/master
         introText = (TextView) findViewById(R.id.introText);
         cuisineText = (TextView) findViewById(R.id.cuisineText);
         eduText = (TextView) findViewById(R.id.eduText);
