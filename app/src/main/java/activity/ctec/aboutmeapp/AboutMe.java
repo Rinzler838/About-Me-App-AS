@@ -10,13 +10,14 @@ import android.widget.TextView;
 
 public class AboutMe extends AppCompatActivity
 {
-
+    //Buttons
     private Button introButton;
     private Button cuisineButton;
     private Button eduButton;
     private Button booksButton;
     private Button digitalButton;
 
+    //Text Boxes
     private TextView introText;
     private TextView cuisineText;
     private TextView eduText;
@@ -30,13 +31,14 @@ public class AboutMe extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about_me);
 
+        //Button Identifiers
         introButton = (Button) findViewById(R.id.introButton);
         cuisineButton = (Button) findViewById(R.id.cuisineButton);
         eduButton = (Button) findViewById(R.id.eduButton);
         booksButton = (Button) findViewById(R.id.booksButton);
         digitalButton = (Button) findViewById(R.id.digitalButton);
 
-
+        //TextBox Identifiers
         introText = (TextView) findViewById(R.id.introText);
         cuisineText = (TextView) findViewById(R.id.cuisineText);
         eduText = (TextView) findViewById(R.id.eduText);
@@ -141,7 +143,7 @@ public class AboutMe extends AppCompatActivity
         }
     }
 
-    //Calling Button functions
+    //Calling Button functions: Carrying out the steps above
 
     private void setupListeners()
     {
@@ -189,7 +191,5 @@ public class AboutMe extends AppCompatActivity
                 changeCuisine();
             }
         });
-
     }
-
 }
