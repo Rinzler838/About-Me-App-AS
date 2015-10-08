@@ -39,9 +39,6 @@ public class AboutMe extends AppCompatActivity
         setContentView(R.layout.about_me);
 
         //Button Identifiers
-
-        //Buttons
-        origin/master
         introButton = (Button) findViewById(R.id.introButton);
         cuisineButton = (Button) findViewById(R.id.cuisineButton);
         eduButton = (Button) findViewById(R.id.eduButton);
@@ -49,9 +46,6 @@ public class AboutMe extends AppCompatActivity
         digitalButton = (Button) findViewById(R.id.digitalButton);
 
         //TextBox Identifiers
-
-        //Text Boxes
-        origin/master
         introText = (TextView) findViewById(R.id.introText);
         cuisineText = (TextView) findViewById(R.id.cuisineText);
         eduText = (TextView) findViewById(R.id.eduText);
@@ -59,7 +53,7 @@ public class AboutMe extends AppCompatActivity
         digitalText = (TextView) findViewById(R.id.digitalText);
         hintText = (TextView) findViewById(R.id.hintText);
 
-        //Images
+        //Image Identifiers
         introImage = (ImageView) findViewById(R.id.introImage);
         //cuisineImage = (ImageView) findViewById(R.id.cuisineImage);
         eduImage = (ImageView) findViewById(R.id.eduImage);
@@ -101,14 +95,25 @@ public class AboutMe extends AppCompatActivity
             introText.setVisibility(View.VISIBLE);
             hintText.setVisibility(View.INVISIBLE);
             introImage.setVisibility(View.VISIBLE);
+
+            cuisineText.setVisibility(View.INVISIBLE);
+            eduText.setVisibility(View.INVISIBLE);
+            booksText.setVisibility(View.INVISIBLE);
+            digitalText.setVisibility(View.INVISIBLE);
         }
         else
         {
             if (introText.getVisibility() == View.VISIBLE)
             {
                 introText.setVisibility(View.INVISIBLE);
-                hintText.setVisibility(View.VISIBLE);
                 introImage.setVisibility(View.INVISIBLE);
+
+                cuisineText.setVisibility(View.INVISIBLE);
+                eduText.setVisibility(View.INVISIBLE);
+                booksText.setVisibility(View.INVISIBLE);
+                digitalText.setVisibility(View.INVISIBLE);
+
+                hintText.setVisibility(View.VISIBLE);
             }
         }
     }
@@ -120,14 +125,25 @@ public class AboutMe extends AppCompatActivity
             cuisineText.setVisibility(View.VISIBLE);
             hintText.setVisibility(View.INVISIBLE);
             //cuisineImage.setVisibility(View.VISIBLE);
+
+            introText.setVisibility(View.INVISIBLE);
+            eduText.setVisibility(View.INVISIBLE);
+            booksText.setVisibility(View.INVISIBLE);
+            digitalText.setVisibility(View.INVISIBLE);
         }
         else
         {
             if (cuisineText.getVisibility() == View.VISIBLE)
             {
                 cuisineText.setVisibility(View.INVISIBLE);
-                hintText.setVisibility(View.VISIBLE);
                 //cuisineImage.setVisibility(View.INVISIBLE);
+
+                introText.setVisibility(View.INVISIBLE);
+                eduText.setVisibility(View.INVISIBLE);
+                booksText.setVisibility(View.INVISIBLE);
+                digitalText.setVisibility(View.INVISIBLE);
+
+                hintText.setVisibility(View.VISIBLE);
             }
 
         }
@@ -140,14 +156,25 @@ public class AboutMe extends AppCompatActivity
             eduText.setVisibility(View.VISIBLE);
             hintText.setVisibility(View.INVISIBLE);
             eduImage.setVisibility(View.VISIBLE);
+
+            introText.setVisibility(View.INVISIBLE);
+            cuisineText.setVisibility(View.INVISIBLE);
+            booksText.setVisibility(View.INVISIBLE);
+            digitalText.setVisibility(View.INVISIBLE);
         }
         else
         {
             if (eduText.getVisibility() == View.VISIBLE)
             {
                 eduText.setVisibility(View.INVISIBLE);
-                hintText.setVisibility(View.VISIBLE);
                 eduImage.setVisibility(View.INVISIBLE);
+
+                introText.setVisibility(View.INVISIBLE);
+                cuisineText.setVisibility(View.INVISIBLE);
+                booksText.setVisibility(View.INVISIBLE);
+                digitalText.setVisibility(View.INVISIBLE);
+
+                hintText.setVisibility(View.VISIBLE);
             }
 
         }
@@ -160,14 +187,25 @@ public class AboutMe extends AppCompatActivity
             booksText.setVisibility(View.VISIBLE);
             hintText.setVisibility(View.INVISIBLE);
             booksImage.setVisibility(View.VISIBLE);
+
+            introText.setVisibility(View.INVISIBLE);
+            cuisineText.setVisibility(View.INVISIBLE);
+            eduText.setVisibility(View.INVISIBLE);
+            digitalText.setVisibility(View.INVISIBLE);
         }
         else
         {
             if (booksText.getVisibility() == View.VISIBLE)
             {
                 booksText.setVisibility(View.INVISIBLE);
-                hintText.setVisibility(View.VISIBLE);
                 booksImage.setVisibility(View.INVISIBLE);
+
+                introText.setVisibility(View.INVISIBLE);
+                cuisineText.setVisibility(View.INVISIBLE);
+                eduText.setVisibility(View.INVISIBLE);
+                digitalText.setVisibility(View.INVISIBLE);
+
+                hintText.setVisibility(View.VISIBLE);
             }
 
         }
@@ -180,14 +218,25 @@ public class AboutMe extends AppCompatActivity
             digitalText.setVisibility(View.VISIBLE);
             hintText.setVisibility(View.INVISIBLE);
             //digitalImage.setVisibility(View.VISIBLE);
+
+            introText.setVisibility(View.INVISIBLE);
+            cuisineText.setVisibility(View.INVISIBLE);
+            eduText.setVisibility(View.INVISIBLE);
+            booksText.setVisibility(View.INVISIBLE);
         }
         else
         {
             if (digitalText.getVisibility() == View.VISIBLE)
             {
                 digitalText.setVisibility(View.INVISIBLE);
-                hintText.setVisibility(View.VISIBLE);
                 //digitalImage.setVisibility(View.INVISIBLE);
+
+                introText.setVisibility(View.INVISIBLE);
+                cuisineText.setVisibility(View.INVISIBLE);
+                eduText.setVisibility(View.INVISIBLE);
+                booksText.setVisibility(View.INVISIBLE);
+
+                hintText.setVisibility(View.VISIBLE);
             }
 
         }

@@ -189,29 +189,5 @@
         android:layout_toEndOf="@+id/introImage"
         android:layout_alignTop="@+id/hintText" />
 
-    <Space
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_toEndOf="@+id/introButton"
-        android:layout_below="@+id/buttonSpacer"
-        android:layout_alignLeft="@+id/digitalButton"
-        android:layout_alignStart="@+id/digitalButton" />
-
-    <Space
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_toEndOf="@+id/cuisineButton"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/cuisineButton"
-        android:id="@+id/space" />
-
-    <Space
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_toRightOf="@+id/introButton"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/cuisineButton"
-        android:layout_toStartOf="@+id/cuisineButton" />
-
 
 </RelativeLayout>
